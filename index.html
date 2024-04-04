@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/menu.js" defer></script>
     <link rel="shortcut icon" href="src/imgs/lanterna-de-papel.png" type="image/x-icon">
     <title> | Vibe Fest</title>
 </head>
@@ -15,6 +17,7 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
                 <li><a href="#">Sobre</a></li>
             </ul>
         </nav>
@@ -27,13 +30,54 @@
             <section class="module content">
                 <div class="container" id="servicos">
                     <h2>SERVIÇOS<span>.</span></h2>
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./src/imgs/bebida.jpg" class="d-block w-100" alt="Bebida">
+                          <div class="carousel-caption d-md-block">
+                            <h5>Baladas</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./src/imgs/fotoFesta.jpg" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-md-block">
+                            <h5>Festas Casuais</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./src/imgs/festaMulher.jpg" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-md-block">
+                            <h5>Aniversários</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./src/imgs/festa empresarial.jpg" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-md-block">
+                            <h5>Festas Empresariais</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div><!--carouselExampleCaptions-->
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
                           <div class="card h-100">
                             <img src="src/imgs/bebida.jpg" class="card-img-top" alt="Bebida">
                             <div class="card-body">
-                              <h5 class="card-title">Baladas</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <h5 class="card-title">| Baladas |</h5>
                             </div>
                           </div>
                         </div>
@@ -41,8 +85,7 @@
                           <div class="card h-100">
                             <img src="src/imgs/fotoFesta.jpg" class="card-img-top" alt="Foto Festa">
                             <div class="card-body">
-                              <h5 class="card-title">Festas Casuais</h5>
-                              <p class="card-text">This is a short card.</p>
+                              <h5 class="card-title">| Festas Casuais |</h5>
                             </div>
                           </div>
                         </div>
@@ -50,8 +93,7 @@
                           <div class="card h-100">
                             <img src="src/imgs/festaMulher.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Aniversários</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                              <h5 class="card-title">| Aniversários |</h5>
                             </div>
                           </div>
                         </div>
@@ -59,17 +101,22 @@
                           <div class="card h-100">
                             <img src="src/imgs/festa empresarial.jpg" class="card-img-top" alt="Festa Empresarial">
                             <div class="card-body">
-                              <h5 class="card-title">Festas Empresariais</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <h5 class="card-title">| Festas Empresariais |</h5>
                             </div>
                           </div>
                         </div>
-                      </div>       
+                      </div>      
+                      <button class="btn">
+                        <span>CONTRATE NOSSOS SERVIÇOS</span>
+                      </button>
                 </div>
             </section>
     
-          <!-- <section class="module parallax parallax-2">
-            <h1>Algum texto aqui</h1>
+          <section class="module parallax parallax-2" id="contact">
+            <h1 id="h1contact">FALE CONOSCO</h1>
+            <button class="btnContact">
+              Contato
+            </button>
           </section>
     
           <section class="module content">
@@ -83,7 +130,7 @@
               </p>          
             </div>
           </section>
-    
+              <!-- 
           <section class="module parallax parallax-3">
             <h1>Terceiro titulo aqui</h1>
           </section>
