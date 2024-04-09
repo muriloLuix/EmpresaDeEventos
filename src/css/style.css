@@ -279,6 +279,11 @@ section.module.parallax h1 {
   transition: 1s ease-in-out;
   margin-top: 5%;
 }
+
+span .services{
+  text-decoration: none;
+  color: #fff;
+}
 .btn:hover {
   transition: 1s ease-in-out;
   background: #4f95da;
@@ -321,6 +326,74 @@ section.module.parallax h1 {
 
 #carouselExampleCaptions{
   display: none;
+}
+
+/* Style Form */
+
+
+.body{
+  background-color: var(--bg-fundo-dark);
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+
+.row{
+  padding-top: 1%;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+textarea{
+  margin-top: 1%;
+}
+.form-control {
+  width: 20%;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+
+.form-floating>label{
+  left: 39.8%;
+  color: #595C5F;
+}
+
+.form-floating {
+  margin-bottom: 10px;
+}
+
+.form-select {
+  width: 20%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.col-md{
+  height: 58px;
+}
+
+.btn-submit {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
 }
 
 /* Mobile Style */
@@ -383,3 +456,5 @@ section.module.parallax h1 {
     font-size: 36px;
   }
 }
+
+
