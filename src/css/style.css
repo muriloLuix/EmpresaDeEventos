@@ -469,6 +469,10 @@ form {
     display: none;
   }
 
+  .g-4{
+    display: none !important;
+  }
+
   /* Services Style */
 
   #carouselExampleCaptions {
