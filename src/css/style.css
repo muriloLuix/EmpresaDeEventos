@@ -466,6 +466,21 @@ form {
   position: relative;
 }
 
+.placeholder {
+  position: absolute;
+  pointer-events: none;
+  font-size: 80%;
+  color: #6c757d;
+  top: 10px;
+  left: 5px;
+  transition: opacity 0.2s ease;
+}
+
+input[type="date"]:focus + .placeholder,
+input[type="date"]:not(:placeholder-shown) + .placeholder {
+  opacity: 0;
+}
+
 /* Mobile Style */
 
 @media screen and (max-width: 1080px) {
