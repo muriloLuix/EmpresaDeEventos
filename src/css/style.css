@@ -531,12 +531,14 @@ form {
     font-size: 15px;
   }
   .form-date{
-    width: 81%;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
   }
   .servicos{
-    width: 135%;
-    position: relative;
-    right: 35%;
+    width: 100%;
+  }
+  .container_4{
+    display: flex;
+    flex-direction: column;
   }
 }
