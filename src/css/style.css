@@ -224,11 +224,11 @@ section.module.parallax:after {
 }
 
 section.module.parallax-1 {
-  background-image: url("src/imgs/festabg.jpg");
+  background-image: url("/src/imgs/festabg.jpg");
 }
 
 section.module.parallax-2 {
-  background-image: url("src/imgs/festaWhite.jpg");
+  background-image: url("/src/imgs/festaWhite.jpg");
 }
 /*
 section.module.parallax-3{
