@@ -4,7 +4,7 @@ In this project I'm developing, it's a responsive landing page for print, mobile
 
 <hr>
 
-![image](https://github.com/muriloLuix/EmpresaDeEventos/assets/143234115/6918b833-aad4-48f9-871d-59a4f0f03ffa)
+![image](https://github.com/muriloLuix/EmpresaDeEventos/assets/143234115/e12cf8f6-3b2c-454e-b475-0812b8c13e77)
 
 
 <hr>
