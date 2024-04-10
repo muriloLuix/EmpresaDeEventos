@@ -460,6 +460,12 @@ form {
 #btnForm:hover {
   transform: scale(1.09);
 }
+
+.form-date{
+  z-index: 1000;
+  position: relative;
+}
+
 /* Mobile Style */
 
 @media screen and (max-width: 1080px) {

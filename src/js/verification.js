@@ -16,3 +16,8 @@
 // } )
 
 
+$( function() {
+    $( "#datepicker" ).datepicker({
+      dateFormat: 'dd/mm/yy' // Formato de data desejado
+    });
+  } );
