@@ -15,6 +15,9 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/src/css/style.css" />
+    <script src="/src/js/verification.js" defer></script>
+    <script src="/src/js/cpf.js" defer></script>
+    <script src="/src/js/fone.js" defer></script>
     <link
       rel="shortcut icon"
       href="/src/imgs/lanterna-de-papel.png"
@@ -23,44 +26,216 @@
     <title>| Vibe Fest - Contrate</title>
   </head>
   <body class="body">
-    <form action="">
+    <h1 class="h1Form">Contrate nossos Serviços</h1>
+    <form action="obrigado.html" method="post">
+      <div class="container_1">
         <div class="row">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Primeiro Nome" aria-label="Primeiro Nome">
+          <div class="col-md">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control form-control_mail"
+                id="floatingInputGrid"
+                placeholder="Your Name"
+                value=""
+                autocomplete="off"
+                required
+              />
+              <label for="floatingInputGrid">Primeiro Nome</label>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Último Nome" aria-label="Último Nome">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md">
-                <div class="form-floating">
-                    <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="">
-                    <label for="floatingInputGrid">Endereço de E-mail</label>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md">
-                <div class="form-floating">
-                    <select class="form-select" id="floatingSelectGrid">
-                        <option selected disabled></option>
-                        <option value="1">Festa Casual</option>
-                        <option value="2">Balada</option>
-                        <option value="3">Aniversários</option>
-                        <option value="4">Festas Empresariais</option>
-                    </select>
-                    <label for="floatingSelectGrid">Escolha nossos serviços.</label>
-                </div>
-            </div>
-        </div>
-        <div class="form-floating">
-            <textarea class="form-control" placeholder="Deixe um comentário aqui" id="floatingTextarea2" style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Observações:</label>
           </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control form-control_mail"
+                id="floatingInputGrid"
+                placeholder="Your Name"
+                value=""
+                autocomplete="off"
+                required
+              />
+              <label for="floatingInputGrid">Último Nome</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container_2">
+        <div class="row">
+          <div class="col-md">
+            <div class="form-floating">
+              <input
+                type="email"
+                class="form-control form-control_mail"
+                id="floatingInputGrid"
+                placeholder="name@example.com"
+                value=""
+                required
+              />
+              <label for="floatingInputGrid">Endereço de E-mail</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <div class="form-floating">
+              <input
+                type="tel"
+                class="form-control form-control_mail"
+                id="telefone"
+                placeholder="(00) 00000-0000"
+                value=""
+                autocomplete="off"
+                maxlength="15"
+                required
+              />
+              <label for="floatingInputGrid">Telefone</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container_3">
+        <div class="row">
+          <div class="col-md">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control form-control_mail"
+                id="cpf"
+                name="cpf"
+                placeholder="Your CPF"
+                autocomplete="off"
+                maxlength="14"
+                required
+              />
+              <label for="floatingInputGrid">CPF</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <div class="form-floating">
+              <select class="form-select" id="floatingSelectGrid">
+                <option class="optionGeneral" selected disabled>
+                  | Selecione seu Estado
+                </option>
+                <option value="1">Acre</option>
+                <option value="2">Alagoas</option>
+                <option value="3">Amapá</option>
+                <option value="4">Amazonas</option>
+                <option value="5">Bahia</option>
+                <option value="6">Ceará</option>
+                <option value="7">Distrito Federal</option>
+                <option value="8">Espírito Santo</option>
+                <option value="9">Goiás</option>
+                <option value="10">Maranhão</option>
+                <option value="11">Mato Grosso</option>
+                <option value="12">Mato Grosso do Sul</option>
+                <option value="13">Minas Gerais</option>
+                <option value="14">Pará</option>
+                <option value="15">Paraíba</option>
+                <option value="16">Paraná</option>
+                <option value="17">Pernambuco</option>
+                <option value="18">Piauí</option>
+                <option value="19">Rio de Janeiro</option>
+                <option value="20">Rio Grande do Norte</option>
+                <option value="21">Rio Grande do Sul</option>
+                <option value="22">Rondônia</option>
+                <option value="23">Roraima</option>
+                <option value="24">Santa Catarina</option>
+                <option value="25">São Paulo</option>
+                <option value="26">Sergipe</option>
+                <option value="27">Tocantins</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container_4">
+        <div class="row">
+          <div class="col">
+            <input
+              type="date"
+              class="form-control"
+              placeholder="Data de Nascimento"
+              aria-label="Data de Nascimento"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <div class="form-floating">
+              <select class="form-select" id="floatingSelectGrid" required>  
+                <option class="optionGeneral" selected disabled>
+                  | Selecione uma opção
+                </option>
+                <option value="1">Festa Casual</option>
+                <option value="2">Balada</option>
+                <option value="3">Aniversários</option>
+                <option value="4">Festas Empresariais</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-floating">
+        <textarea
+          class="form-control form2"
+          placeholder="Deixe um comentário aqui"
+          id="floatingTextarea2"
+          style="height: 100px"
+        ></textarea>
+        <label for="floatingTextarea2">Observações:</label>
+      </div>
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="btnForm"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Enviar
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Obrigado!</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Em breve entremos em contato para validar as informações!
+            </div>
+            <div class="modal-footer">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="btnForm"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </form>
-    
   </body>
 </html>
