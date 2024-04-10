@@ -491,9 +491,6 @@ form {
     color: #fff;
   }
 
-  .row {
-    display: none;
-  }
   .row-cols-1 > * {
     width: 73%;
   }
@@ -517,5 +514,25 @@ form {
 
   section.module.parallax h1 {
     font-size: 36px;
+  }
+
+  form{
+    width: 90%;
+  }
+
+  .form-control{
+    margin: 0;
+  }
+  .form-floating > label{
+    font-size: 15px;
+  }
+  .form-date{
+    width: 81%;
+    max-width: 90%;
+  }
+  .servicos{
+    width: 135%;
+    position: relative;
+    right: 35%;
   }
 }
