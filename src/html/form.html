@@ -123,7 +123,7 @@
       <div class="row">
         <div class="col-md">
           <div class="form-floating">
-            <select class="form-select servicos" id="floatingSelectGrid" required>
+            <select class="form-select servicos" id="servicos" required>
               <option class="optionGeneral" selected disabled>
                 | Serviços
               </option>
@@ -142,31 +142,29 @@
       <label for="floatingTextarea2">Observações:</label>
     </div>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" id="btnForm" data-bs-toggle="modal" data-bs-target="#exampleModal"
-      onclick="verification()">
+    <button type="button" class="btn btn-primary" id="btnForm">
       Enviar
-    </button>
+  </button>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Obrigado!</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Obrigado!</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  Em breve entremos em contato para validar as informações!
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                      Fechar
+                  </button>
+              </div>
           </div>
-          <div class="modal-body">
-            Em breve entremos em contato para validar as informações!
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-primary" id="btnForm" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
-              Fechar
-            </button>
-          </div>
-        </div>
       </div>
-    </div>
+  </div>
   </form>
 </body>
 

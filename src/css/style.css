@@ -14,6 +14,10 @@
 
 /* General Styles */
 
+.input-invalid {
+  border: 1px solid red !important;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -480,6 +484,8 @@ input[type="date"]:focus + .placeholder,
 input[type="date"]:not(:placeholder-shown) + .placeholder {
   opacity: 0;
 }
+
+
 
 /* Mobile Style */
 
