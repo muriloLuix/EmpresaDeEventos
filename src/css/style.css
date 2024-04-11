@@ -660,23 +660,60 @@ input[type="date"]:not(:placeholder-shown) + .placeholder {
       display: none;
     }
 
+    .col {
+      flex: 1;
+      max-width: calc(25% - 1rem); 
+    }
+
+    .btn{
+      display: none;
+    }
+
     .card{
       box-shadow: none;
       display: flex;
+      width: 100%;
+    }
+
+    .card-body h5{
+      font-size: 1.3rem;
+      width: 100%;
+    }
+
+    .g-4{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: row-reverse;
     }
 
     .baladas img {
-      content: url('/src/imgs/bebida.jpg');
-      width: 100px; 
+      content: url('../imgs/bebida.jpg');
+      width: 11em; 
       height: auto;
-      margin: 0 auto;
     }
 
     .festaCasual img{
-      content: url('/src/imgs/fotoFesta.jpg');
-      width: 100px; 
+      content: url('../imgs/fotoFesta.jpg');
+      width: 11em; 
       height: auto;
-      margin: 0 auto;
+    }
+
+    .festaMulher img{
+      content: url('../imgs/festaMulher.jpg');
+      width: 11em; 
+      height: auto;
+    }
+
+    .festaEmpresarial img{
+      content: url('../imgs/festa empresarial.jpg');
+      width: 11em; 
+      height: auto;
+    }
+
+    .card-title{
+      color: #000 !important;
     }
     
     section.module.parallax-1 {
