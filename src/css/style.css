@@ -650,4 +650,92 @@ input[type="date"]:not(:placeholder-shown) + .placeholder {
     min-height: 100px;
   }
 
-}
+  /* Estilos para impressão */
+  @media print {
+    header ul li a{
+      color: #000 !important;
+    }
+
+    .carousel-item img {
+      display: none;
+    }
+
+    .card{
+      box-shadow: none;
+      display: flex;
+    }
+
+    .baladas img {
+      content: url('/src/imgs/bebida.jpg');
+      width: 100px; 
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .festaCasual img{
+      content: url('/src/imgs/fotoFesta.jpg');
+      width: 100px; 
+      height: auto;
+      margin: 0 auto;
+    }
+    
+    section.module.parallax-1 {
+      height: 20vh !important;
+      box-shadow: none;
+    }
+    
+    .wrapper {
+      width: 100%; 
+      overflow-x: hidden;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 0; 
+    }
+  
+    .module.parallax,
+    .module.content {
+      height: auto !important;
+    }
+  
+    .module.parallax h1 {
+      font-size: 48px; 
+      color: #000 !important;
+    }
+    
+    .card {
+      width: 100%; 
+    }
+  
+    #carouselExampleCaptions {
+      display: none;
+    }
+    
+    /* Adicione as imagens dos serviços uma abaixo da outra */
+    .row-cols-1 > .col {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #contact{
+      display: none;
+    }
+
+    #h1contact{
+      display: none;
+    }
+    .btnContact{
+      display: none;
+    }
+    #footer{
+      display: none;
+    }
+    .card h-100 img{
+      width: 100px;
+      height: auto;
+    }
+    #servicos h2{
+      color: var(--bg-fundo-light) !important;
+    }
+  }
+}  
