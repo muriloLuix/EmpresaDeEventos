@@ -599,3 +599,55 @@ input[type="date"]:not(:placeholder-shown) + .placeholder {
     flex-direction: column;
   }
 }
+
+@media print {
+  body {
+    background-color: #f0f0f0; 
+    color: #333; 
+    font-family: Arial, sans-serif; 
+  }
+
+  form {
+    width: 100%; 
+    margin: 0;
+    padding: 0; 
+    box-shadow: none;
+    border-radius: 0; 
+    background-color: transparent;
+  }
+
+  .form-label {
+    font-weight: normal; 
+  }
+
+  .btn-submit {
+    display: none; 
+  }
+
+  .btnReturn {
+    display: none; 
+  }
+
+  .container_1,
+  .container_2,
+  .container_3,
+  .container_4 {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    display: block; 
+  }
+
+  .form-control,
+  .form-select {
+    border: 1px solid #555;
+    padding: 8px;
+    background-color: #fff; /
+  }
+
+  textarea {
+    min-height: 100px;
+  }
+
+}
