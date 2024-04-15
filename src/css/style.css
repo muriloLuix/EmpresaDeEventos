@@ -841,7 +841,7 @@ input[type="date"]:not(:placeholder-shown)+.placeholder {
   }
 
   .site-footer {
-    padding: 45px 15px 20px; /* Ajustar o padding */
+    padding: 45px 15px 20px;
   }
 
   .site-footer h6{
@@ -1006,7 +1006,6 @@ input[type="date"]:not(:placeholder-shown)+.placeholder {
     display: none;
   }
 
-  /* Adicione as imagens dos serviços uma abaixo da outra */
   .row-cols-1>.col {
     width: 100%;
     margin-bottom: 20px;
