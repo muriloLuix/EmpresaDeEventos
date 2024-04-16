@@ -990,6 +990,15 @@ a{
   .footer-links li{
     margin-left: 2.5%;
   }
+
+  .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    top: 0px;
+  }
 }
 
 
