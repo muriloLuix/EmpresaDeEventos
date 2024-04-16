@@ -278,14 +278,16 @@ section.module.parallax h1 {
   font-size: 1.5rem;
 }
 
-.btn {
+.btnServices {
   height: 60px;
   cursor: pointer;
+  padding: 1%;
   background: transparent;
   border: 1px solid #91c9ff;
   outline: none;
   transition: 1s ease-in-out;
   margin-top: 5%;
+  border-radius: 10px;
 }
 
 span .services {
@@ -293,16 +295,16 @@ span .services {
   color: #fff;
 }
 
-.btn:hover {
+.btnServices:hover {
   transition: 1s ease-in-out;
   background: #4f95da;
 }
 
-.btn:hover svg {
+.btnServices:hover svg {
   stroke-dashoffset: -480;
 }
 
-.btn span {
+.btnServices span {
   color: white;
   font-size: 18px;
   font-weight: 100;
