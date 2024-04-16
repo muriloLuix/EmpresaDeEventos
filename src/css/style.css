@@ -361,10 +361,66 @@ span .services {
 
 /* Style Form */
 
-.body {
+.bodyDark {
   background-color: #161616;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+  transition: .3s;
+}
+
+.bodyWhite{
+  background-color: #e0dede;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  transition: .3s;
+}
+
+.button{
+  position: relative;
+  width: 100px;
+  height: 40px;
+  bottom: 50px;
+  margin: 1%;
+  border-radius: 25px;
+  box-shadow: 0 0 2.5px 0 #39a2db59;
+  cursor: pointer;
+  background-color: #161616;
+}
+
+.buttonLight{
+  position: relative;
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  box-shadow: 0 0 2.5px 0 #39a2db59;
+  cursor: pointer;
+  background-color: #ffffff;
+  bottom: 50px;
+  margin: 1%;
+}
+.ball{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: left 1s;
+}
+
+.ballDark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #000;
+  transition: left 1s;
+}
+.ball-move{
+  left: calc(100% - 40px);
 }
 
 .form-row {
@@ -442,7 +498,7 @@ textarea {
   background-color: #0056b3;
 }
 
-form {
+.formLight {
   display: grid;
   gap: 10px;
   width: 36%;
@@ -452,6 +508,20 @@ form {
   border-radius: 20px;
   padding: 35px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: .3s;
+}
+
+.formDark{
+  display: grid;
+  gap: 10px;
+  width: 36%;
+  margin: 0 auto;
+  margin-top: 5%;
+  background-color: #353434;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: .3s;
 }
 
 .h1Form {
@@ -459,6 +529,16 @@ form {
   text-transform: uppercase;
   font-size: 2rem;
   color: #fff;
+  font-weight: 700;
+  padding: 0.5%;
+  font-family: "Archivo", sans-serif;
+}
+
+.blackText{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #000;
   font-weight: 700;
   padding: 0.5%;
   font-family: "Archivo", sans-serif;
@@ -528,16 +608,45 @@ input[type="date"]:not(:placeholder-shown)+.placeholder {
   margin-top: 2%;
 }
 
+.btnReturnDark{
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #353434;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
 .btnReturn:hover {
   background-color: #8bbcc2;
   transform: scale(1.09);
 }
 
-.btnReturn a {
+.mainWhite{
+  color: #fff;
+}
+
+a{
+  text-decoration: none;
+}
+
+.btnReturn.mainWhite {
   text-decoration: none;
   color: #fff;
   transition: .3s;
 }
+
+
 
 #menu__toggle {
   opacity: 0;
@@ -836,7 +945,7 @@ input[type="date"]:not(:placeholder-shown)+.placeholder {
     z-index: 0;
   }
 
-  form {
+  .formLight {
     width: 90%;
   }
 
@@ -892,7 +1001,7 @@ input[type="date"]:not(:placeholder-shown)+.placeholder {
     font-family: Arial, sans-serif;
   }
 
-  form {
+  .formLight {
     width: 100%;
     margin: 0;
     padding: 0;
