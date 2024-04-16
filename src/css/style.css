@@ -14,6 +14,22 @@
 
 /* General Styles */
 
+.whatsapp-link {
+  position: fixed;
+  right: 20px; 
+  bottom: 20px; 
+  z-index: 9999; 
+}
+
+.whatsapp-icon {
+  width: 45px; 
+  height: auto;
+  transition: .3s;
+}
+
+.whatsapp-icon:hover{
+  transform: scale(1.09);
+}
 
 
 .input-invalid {
@@ -317,7 +333,6 @@ span .services {
   width: 150px;
   margin: 5% auto;
   background-color: #f0f0f0;
-  color: #333;
   border: 1px solid #ccc;
   border-radius: 25px;
   padding: 15px 25px;
@@ -328,6 +343,11 @@ span .services {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   display: inline-block;
+}
+
+.btnContact a{
+  text-decoration: none;
+  color: #333;
 }
 
 .btnContact:hover {
